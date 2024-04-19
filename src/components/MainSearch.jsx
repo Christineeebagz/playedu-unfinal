@@ -17,17 +17,16 @@ export const MainSearch = ({ onSubmit }) => {
         console.log(json);
       });
   };
+  const handleChange = (value) => {
+    setInput(value);
+    fetchData(value);
+  };
 
   //   const handleCheckbox = (event) => {
   //     console.log(event.target.value);
   //     let state = state;
   //     state.category[event.target.value] = event.target.checked;
   //   };
-
-  const handleChange = (value) => {
-    setInput(value);
-    fetchData(value);
-  };
 
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {

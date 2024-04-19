@@ -5,13 +5,13 @@ const Navbar = () => {
   return (
     <div id="navbar">
       <nav className=" bg-body-tertiary">
-        <div className="container">
+        <div id="container">
           <a className="navbar-brand" href="#">
             <img
-              src="public/sample-logo.png"
+              src="public/playedu.svg"
               alt="Bootstrap"
               width="100"
-              height="50"
+              height="40"
             />
           </a>
         </div>

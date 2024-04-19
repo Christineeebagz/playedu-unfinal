@@ -3,6 +3,7 @@ import Navbar from "./components/NavBar";
 import "./App.css";
 import { MainSearch } from "./components/MainSearch";
 import { GenerateResult } from "./components/GenerateResult";
+import { RelatedSearch } from "./components/RelatedSearch";
 
 const App = () => {
   const [searchData, setSearchData] = useState(null);
@@ -24,6 +25,7 @@ const App = () => {
           type={searchData.type}
         />
       )}
+      {searchData && <RelatedSearch input={searchData.input} />}
     </div>
   );
 };
