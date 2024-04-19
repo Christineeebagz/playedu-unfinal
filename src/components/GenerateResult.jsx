@@ -1,6 +1,6 @@
 import React from "react";
 import { GenerateText } from "./GenerateText";
-import RelatedSearch from "./RelatedSearch";
+// import RelatedSearch from "./RelatedSearch";
 import "./GenerateText.css";
 
 export const GenerateResult = ({ input, categories, type }) => {
@@ -12,7 +12,7 @@ export const GenerateResult = ({ input, categories, type }) => {
       {type === "generate" && (
         <GenerateText input={input} categories={categories} type={type} />
       )}
-      <RelatedSearch />
+      {/* <RelatedSearch /> */}
     </div>
   );
 };

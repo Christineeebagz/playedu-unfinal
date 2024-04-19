@@ -99,6 +99,7 @@ export const MainSearch = ({ onSubmit }) => {
             onChange={handleCategoryChange}
           />
           <label htmlFor="kinesthetic">Kinesthetic</label>
+
           <button onClick={handleSubmit}>Submit</button>
         </div>
       )}
